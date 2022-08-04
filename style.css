@@ -1,9 +1,19 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:ital,wght@1,800&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,800&display=swap');
+
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
+}
+/* css variable */
+:root {
+    --title-color: #B9BBC1;
+    --font-orbitron: 'Orbitron', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto Flex', sans-serif;
 }
 
 body {
@@ -27,4 +37,12 @@ main {
 }
 .calculator-body {
     display: flex;
+    padding: 20px;
+    justify-content: flex-end;
+
+}
+.calculator-brand {
+    font-family: var(--font-poppins);
+    color: var(--title-color);
+    font-size: 20px;
 }

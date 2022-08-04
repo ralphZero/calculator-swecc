@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #C4D0E8 100%);
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-body {
+    background: linear-gradient(180deg, #F4F5F7 0%, #EDEDED 100%);
+    box-shadow: 10px 50px 36px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    width: 350px;
+    height: 70%;
+}
+.calculator-body {
+    display: flex;
+}

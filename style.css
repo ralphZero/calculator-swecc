@@ -112,6 +112,7 @@ main {
 }
 .calculator-btn-ac {
     background-color: var(--btn-ac-color);
+    color: #FFFFFF;
 }
 .calculator-btn-special {
     color: var(--btn-special-textcolor);

@@ -14,6 +14,7 @@
     --screen-color:#909E92;
     --screen-text-color: #39433A;
     --btn-default-color: #F4F5F7;
+    --btn-default-textcolor: #525677;
 
     --btn-ac-color: #FDB82E;
 
@@ -100,8 +101,13 @@ main {
     background-color: var(--btn-default-color);
     box-shadow: -2px -2px 3px #FFFFFF, 2px 4px 5px rgba(0, 0, 0, 0.24),inset 1px 2px 4px rgba(92, 101, 125, 0.04);;
     border-radius: 80%;
+    border: 0;
+    font-family: var(--font-roboto);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--btn-default-textcolor);
 }
-.calculator-btn:hover {
+.calculator-btn-clicked {
     opacity: 0.4;
 }
 #equal {
@@ -113,19 +119,32 @@ main {
 .calculator-btn-ac {
     background-color: var(--btn-ac-color);
     color: #FFFFFF;
+    font-family: var(--font-roboto);
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 .calculator-btn-special {
     color: var(--btn-special-textcolor);
     background-color: var(--btn-special-color);
     box-shadow: -2px -2px 3px #FFFFFF, 2px 4px 5px var(--btn-special-shadow-color);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1;
 }
 .calculator-btn-operator {
     color: var(--btn-operator-textcolor);
     background-color: var(--btn-operator-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -2px 3px #FFFFFF, inset 2px 3px 4px var(--btn-operator-shadow-color);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    font-size: 1.8rem;
 }
 .calculator-btn-equal {
     color: #FFFFFF;
     background-color: var(--btn-equal-color);
     box-shadow: -3px -5px 5px #FFFFFF, 3px 5px 5px rgba(0, 0, 0, 0.25);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    font-size: 2rem;
 }

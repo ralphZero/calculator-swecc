@@ -11,6 +11,8 @@
 /* css variable */
 :root {
     --title-color: #B9BBC1;
+    --screen-color:#909E92;
+    --screen-text-color: #39433A;
     --font-orbitron: 'Orbitron', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
     --font-roboto: 'Roboto Flex', sans-serif;
@@ -33,16 +35,36 @@ main {
     box-shadow: 10px 50px 36px rgba(0, 0, 0, 0.15);
     border-radius: 25px;
     width: 350px;
-    height: 70%;
+    height: 70%; /* to be removed */
 }
 .calculator-body {
     display: flex;
+    flex-direction: column;
     padding: 20px;
-    justify-content: flex-end;
 
 }
 .calculator-brand {
     font-family: var(--font-poppins);
     color: var(--title-color);
     font-size: 20px;
+    align-self: flex-end;
+}
+.calculator-screen {
+    background-color: var(--screen-color);
+    box-shadow: inset 5px 5px 8px rgba(53, 65, 55, 0.17);
+    border-radius: 25px;
+    min-height: 105px;
+    overflow: hidden; /* to prevent text from showing outside ? */
+    padding: 12px;
+}
+.calculator-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.calculator-screen-text-wrapper {
+    font-family: var(--font-orbitron);
+    color: var(--screen-text-color);
+    font-size: 32px;
+    text-align: end;
 }

@@ -107,9 +107,7 @@ main {
     font-weight: 600;
     color: var(--btn-default-textcolor);
 }
-.calculator-btn-clicked {
-    opacity: 0.4;
-}
+
 #equal {
     grid-column: 4;
     grid-row: 5 / span last-line;

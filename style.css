@@ -35,7 +35,7 @@ main {
     box-shadow: 10px 50px 36px rgba(0, 0, 0, 0.15);
     border-radius: 25px;
     width: 350px;
-    height: 70%; /* to be removed */
+    /*height: 70%;  to be removed */
 }
 .calculator-body {
     display: flex;
@@ -69,5 +69,21 @@ main {
     text-align: end;
 }
 .calculator-btn-grid {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
+    gap: 14px;
+    margin-top: 60px;
+}
+.calculator-btn-grid > div{
+    background-color: red;
+    height:60px;
+    width: 67px;
+    justify-content: center;
+}
+#equal {
+    grid-column: 4;
+    grid-row: 5 / span last-line;
+    height: calc(60px * 2 + 14px) /* sets the height as 2 boxes + gap */
 }

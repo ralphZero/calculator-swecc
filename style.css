@@ -27,6 +27,7 @@
     --btn-operator-shadow-color: rgba(115, 76, 137, 0.1);
 
     --btn-equal-color: #8F29E2;
+    --row-gap : 25px;
 
     --font-orbitron: 'Orbitron', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
@@ -49,8 +50,8 @@ main {
     background: linear-gradient(180deg, #F4F5F7 0%, #EDEDED 100%);
     box-shadow: 10px 50px 36px rgba(0, 0, 0, 0.15);
     border-radius: 25px;
-    width: 350px;
-    /*height: 70%;  to be removed */
+    max-width: 360px;
+    max-height: 90%; /* to be removed */
 }
 .calculator-body {
     display: flex;
@@ -89,6 +90,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 100%;
     gap: 14px;
+    row-gap: var(--row-gap);
     margin-top: 60px;
 }
 .calculator-btn{
@@ -111,7 +113,7 @@ main {
 #equal {
     grid-column: 4;
     grid-row: 5 / span last-line;
-    height: calc(60px * 2 + 14px); /* sets the height as 2 boxes + gap */
+    height: calc(60px * 2 + var(--row-gap)); /* sets the height as 2 boxes + gap */
     border-radius: 35px;
 }
 .calculator-btn-ac {
